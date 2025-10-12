@@ -41,8 +41,8 @@ fix_bcf_default() {
 	[ -z "$bcf" ] && return 0
 
 	uci -q set wireless."${config}".bcf="${bcf}"
-    uci -q set wireless."${config}".enable_mcast_whitelist=0
-    uci -q set wireless."${config}".country='US'
+	uci -q set wireless."${config}".enable_mcast_whitelist=0
+	uci -q set wireless."${config}".country='US'
 }
 
 config_load wireless
