@@ -81,4 +81,4 @@ define Package/alfred/install
 	[ "x$(CONFIG_PACKAGE_ALFRED_BATHOSTS)" == "xy" ] && $(INSTALL_BIN) ./files/bat-hosts.lua $(1)/etc/alfred/bat-hosts.lua ; true
 endef
 
-$(eval $(call BuildPackage,alfred))
+$(eval $(call BuildPackage,alfred-openmanet))
